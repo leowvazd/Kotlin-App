@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Kotlin-App.iml" filepath="$PROJECT_DIR$/.idea/modules/Kotlin-App.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/To_do_list.iml" filepath="$PROJECT_DIR$/.idea/modules/To_do_list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/To_do_list.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/To_do_list.app.iml" />
     </modules>
   </component>
 </project>
