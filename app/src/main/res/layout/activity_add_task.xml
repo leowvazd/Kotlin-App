@@ -8,7 +8,7 @@
         android:id="@+id/toolbar"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
-        app:title="Criar Tarefa"
+        app:title="@string/label_new_task"
         app:navigationIcon="@drawable/ic_navigate"
         android:layout_height="wrap_content" />
 
@@ -35,7 +35,7 @@
         android:layout_marginTop="16dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_height="wrap_content"
-        android:hint="Título">
+        android:hint="@string/label_title">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -54,7 +54,7 @@
         app:layout_constraintStart_toStartOf="@id/guide_start"
         app:layout_constraintEnd_toStartOf="@id/til_hour"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Data"
+        android:hint="@string/label_date"
         app:startIconDrawable="@drawable/ic_calender"
         >
 
@@ -71,7 +71,7 @@
         android:layout_width="0dp"
         android:id="@+id/til_hour"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Hora"
+        android:hint="@string/label_hour"
         app:startIconDrawable="@drawable/ic_timer"
         app:layout_constraintTop_toTopOf="@id/til_date"
         app:layout_constraintEnd_toEndOf="@id/guide_end"
@@ -96,7 +96,7 @@
         android:layout_marginBottom="16dp"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="0dp"
-        android:text="Criar Tarefa"
+        android:text="@string/label_new_task"
         android:layout_height="wrap_content" />
 
 
