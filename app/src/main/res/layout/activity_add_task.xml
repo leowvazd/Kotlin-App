@@ -101,6 +101,7 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
         app:layout_constraintBottom_toTopOf="@id/btn_new_task"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:text="@android:string/cancel"
