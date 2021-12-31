@@ -33,10 +33,10 @@ class AddTaskActivity : AppCompatActivity() {
             }
         }
 
-        insertLiteners()
+        insertListeners()
     }
 
-    private fun insertLiteners()
+    private fun insertListeners()
     {
         binding.tilDate.editText?.setOnClickListener{
             // Log.e("TAG", "insertListeners")

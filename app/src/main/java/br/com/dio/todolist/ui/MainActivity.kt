@@ -2,8 +2,9 @@ package br.com.dio.todolist.ui
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import br.com.dio.todolist.databinding.ActivityMainBinding
 import br.com.dio.todolist.datasource.TaskDataSource
 
@@ -20,13 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding.rvTasks.adapter = adapter
         updateList()
 
-        insertListenrs()
+        insertListeners()
     }
 
-    private fun insertListenrs()
-    {
-        binding.fab.setOnClickListener()
-        {
+    private fun insertListeners() {
+        binding.fab.setOnClickListener() {
             startActivityForResult(Intent(this, AddTaskActivity::class.java), CREATE_NEW_TASK)
         }
 
@@ -49,7 +48,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateList()
     {
-        adapter.submitList(TaskDataSource.getList())
+        val list = TaskDataSource.getList()
+
+        if (list.isEmpty())
+        {
+            binding.includeState.emptyState.visibility = View.VISIBLE
+        }
+
+        else{
+            binding.includeState.emptyState.visibility = View.GONE
+        }
+        adapter.submitList(list)
     }
 
     companion object {
